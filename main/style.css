@@ -1,0 +1,81 @@
+/* Import fonts are handled in HTML */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9;
+    color: #1f2937; /* Gris sombre pour texte principal */
+}
+
+/* Headings & Serif Styling */
+h1, h2, h3, h4, .font-serif {
+    font-family: 'Merriweather', serif;
+    color: #111827;
+}
+
+/* Accent Colors */
+.text-primary {
+    color: #FF6B6B; /* Rouge corail pour accent */
+}
+
+.bg-accent {
+    background-color: #FFE66D; /* Jaune pastel pour sections */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for Portfolio Sections */
+.portfolio-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+.portfolio-scroll::-webkit-scrollbar-track {
+    background: #e5e7eb; /* Gris clair */
+}
+.portfolio-scroll::-webkit-scrollbar-thumb {
+    background: #9ca3af; /* Gris moyen */
+    border-radius: 12px;
+}
+.portfolio-scroll::-webkit-scrollbar-thumb:hover {
+    background: #6b7280; /* Gris foncé */
+}
+
+/* Fade-in Animation for Portfolio Cards */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card-animate {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Blob-like Background Animation for Hero Section */
+@keyframes floatBlob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    25% { transform: translate(20px, -30px) scale(1.05); }
+    50% { transform: translate(-15px, 15px) scale(0.95); }
+    75% { transform: translate(10px, -10px) scale(1.02); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.hero-blob {
+    animation: floatBlob 8s infinite ease-in-out;
+}
+
+.animation-delay-1500 {
+    animation-delay: 1.5s;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #FF6B6B;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+.btn-primary:hover {
+    background-color: #ff4c4c;
+}
