@@ -12,3 +12,5 @@ HTML / CSS
 Tailwind CSS 
 JavaScript (Vanilla)
 AOS Library pour les animations
+
+Johann Andriandafimanana
